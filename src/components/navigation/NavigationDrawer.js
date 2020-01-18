@@ -13,11 +13,9 @@ function NavigationDrawer(props) {
         <h2 className="text-2xl font-bold">{props.title}</h2>
         <i className="fas fa-caret-down"></i>
       </div>
-      {props.activeDrawerIndex === props.index && (
-        <div className="p-2 flex flex-col">
-          {props.children}
-        </div>
-      )}
+      <div className={`p-2 flex flex-col drawer-transition ${props.activeDrawerIndex === props.index ? 'show' : 'hidden'}`}>
+        {props.children}
+      </div>
     </div>
   )
 }

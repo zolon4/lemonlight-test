@@ -5,3 +5,7 @@
 .wavy {
   text-decoration-style: wavy;
 }
+
+.drawer-transition {
+  transition: display 2s, opacity 0.5s linear;
+}

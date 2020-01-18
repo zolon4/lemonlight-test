@@ -8350,6 +8350,10 @@ video {
   text-decoration-style: wavy;
 }
 
+.drawer-transition {
+  transition: display 2s, opacity 0.5s linear;
+}
+
 @media (min-width: 640px) {
   .sm\:sr-only {
     position: absolute;
