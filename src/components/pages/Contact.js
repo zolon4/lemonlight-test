@@ -1,12 +1,12 @@
 import React from "react";
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom"
 
-function Contact(props) {
+function Contact() {
   return (
     <div className="px-4 py-6 w-full h-screen flex flex-col items-center justify-center">
       <div className="w-64 h-64 bg-yellow-500 rounded-full" />
       <h1 className="text-5xl font-bold">Contact</h1>
-      <Link to="/about">Go to About</Link>
+      <span>Go to <Link to="/about" className="underline text-blue-700 wavy">About</Link></span>
     </div>
   )
 }
