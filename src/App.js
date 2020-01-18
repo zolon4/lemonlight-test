@@ -16,7 +16,7 @@ import News from './components/pages/News';
 function App() {
   return (
     <Router>
-      <div className="w-screen h-screen flex">
+      <div className="w-screen h-screen flex flex-col md:flex-row">
         <Navigation />
         <div className="flex-grow">
           <Switch>

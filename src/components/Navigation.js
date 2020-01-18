@@ -27,8 +27,8 @@ function Navigation(props) {
   }, [props.location]);
 
   return (
-    <div className="h-screen w-56 bg-gray-200">
-      <div className="flex flex-col p-6">
+    <div className="h-16 md:h-screen w-full md:w-56 bg-gray-200">
+      <div className="flex flex-row md:flex-col p-2 md:p-6">
         <NavigationDrawer title="General" index={0} activeDrawerIndex={activeIndex} setActiveIndex={setActiveIndex}>
           <NavigationItem to="/home">Home</NavigationItem>
           <NavigationItem to="/dashboard">Dashboard</NavigationItem>
